@@ -35,8 +35,13 @@
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-	return ""
+	return ""                              
 
+def length_of_string(input1, input2):
+    if len(input1) == len(input2):
+        return(input1+ "\n"+ input2)
+    else:
+        return(max(input1, input2))
 
 
 
@@ -89,6 +94,8 @@ def two(input):
 
 def three(arg1):
 	return "null"
+
+	  
 
 
 	# <QUESTION 4>
@@ -181,7 +188,12 @@ def six(input):
 
 def seven(input):
     return 0
-
+def countVovels(str, n): 
+    if (n == 1): 
+        return isVowel(str[n - 1]); 
+  
+    return (countVovels(str, n - 1) +
+                 
 	# <QUESTION 8>
 
 	# Write a function which takes an input (between 1 and 10 inclusive) and multiplies it by all the numbers before it.
